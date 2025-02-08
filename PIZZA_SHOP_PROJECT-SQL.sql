@@ -1,0 +1,23 @@
+-- PROJECT PIZZA SHOP
+
+-- CREATE DATABASE
+CREATE DATABASE pizza_shop;
+
+-- IMPORT DATA BY RIGHT CLICKING ON THE DATABASE NAME.
+-- CREATE TABLE AND INSERT DATA INTO TABLE BY RIGHT CLICKING ON THE TABLE THEN IMPORT THE DATA
+-- CREATE TABLES
+CREATE TABLE orders (
+	order_id INT NOT NULL,
+    order_date DATE NOT NULL,
+    order_time TIME NOT NULL,
+	PRIMARY KEY (order_id)
+);
+
+CREATE TABLE orders_details (
+	order_details_id INT NOT NULL,
+	order_id INT NOT NULL,
+    pizza_id TEXT NOT NULL,
+    quantity INT NOT NULL,
+	PRIMARY KEY (order_details_id)
+);
+
